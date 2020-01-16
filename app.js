@@ -33,19 +33,50 @@ let favVeg = ["tomato", "cucumber", "lettuce"];
 for (let i = 0; i < 3; ++i) {
     console.log(favVeg[i]);
 }
+console.log(favVeg);
 console.log(favVeg[1]);
+console.log(favVeg.length);
+
+let person = {
+    name: 'John',
+    age: 18,
+    address: {
+        street: '123 Main St',
+        city: 'Birmingham',
+        state: 'AL'
+    }
+}    
+console.log(person);
+console.log(person.name);
+console.log(person.age);
+console.log(person.address);
+console.log(person.address.street);
+
+
+let ckperson = {
+    names: ['Amy', 'Suzy', 'Jenny','Kim','Wendy'],
+    ages: [18, 20, 21, 51, 47]
+    }
+
+    console.log(ckperson);
+    console.log(ckperson.names[0]);
+    console.log(ckperson.ages[0]);
     
-let myObj = {Kim: 51, Bruce: 52, Kennan: 21, Amanda: 18, Gabi: 9};
-console.log(myObj);
-console.log(myObj[0]);
+    for (let i = 0; i < ckperson.names.length; ++i) {
+        console.log('testing loop');
 
-// let i=1;
-// while (i<4) {
-//     checkAge("Kim",18);
-//     i++;
-// }
+        checkAge(ckperson.names[i], ckperson.ages[i]);
+    }
 
-// let myObj = {Charles: 21, Abby: 27, James: 18, John: 17};
-// let n = myObj.length;
-// console.log("length of myObj is ", n)
+function cklength(word) {
+    return word.length;
+}
 
+let wordLength = cklength('Hello world');
+console.log(wordLength);
+
+if (wordLength % 2 === 0) {
+    console.log('Even');
+} else{
+    console.log("Odd")
+}
