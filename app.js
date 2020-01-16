@@ -28,9 +28,17 @@ checkAge("Abby", 27);
 checkAge("James", 18);
 checkAge("John",17);
 
-var favVeg = ["tomato", "cucumber", "lettuce"];
-console.log(favVeg[0]);
-÷
+
+let favVeg = ["tomato", "cucumber", "lettuce"];
+for (let i = 0; i < 3; ++i) {
+    console.log(favVeg[i]);
+}
+console.log(favVeg[1]);
+    
+let myObj = {Kim: 51, Bruce: 52, Kennan: 21, Amanda: 18, Gabi: 9};
+console.log(myObj);
+console.log(myObj[0]);
+
 // let i=1;
 // while (i<4) {
 //     checkAge("Kim",18);
